@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Refeito</title>
+    <style>
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .save-icon {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .save-icon::before {
+            content: '\1F4BE'; /* Unicode do ícone de disquete */
+            font-size: 60px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            padding: 20px;
+            justify-content: left;
+            display: flex;
+            background-color: #f0f0f0;
+        }
+        button{
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicado Affordance</h1>
+    <div class="icon-container">
+        <div class="save-icon"></div>
+    </div>
+    <div class="container">
+        <a href="desafio.html" target="_self" rel="_prev"><button>Voltar para página desafio</button></a>
+
+    </div>
+</body>
+</html>
