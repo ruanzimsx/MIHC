@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .hidden-button {
+            font-size: 10px;
+            background-color: bisque; /* Verde */
+            color: cadetblue;
+            padding: 10px 20px;
+            margin-top: 100px; /* Espaçamento acima do botão */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            padding-left: 180px;
+        }
+        label{
+            padding: 7px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f0f0f0;
+            position: fixed;
+            bottom: 10px; /* Distância do fundo */
+            left: 10px; /* Distância da esquerda */
+            right: 10px;
+        }
+        button{
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            
+        }
+    </style>
+</head>
+<body>
+        <form>
+            <h2 style="text-align: center">Formulário</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="numero">Telefone:</label>
+            <input type="number" id="number" required>
+            <label for="cpf">CPF:</label>
+            <input type="numebr" id="number" required>
+        </form>
+    <button type="submit" class="hidden-button">Enviar</button>
+    <div class="container">
+        <a href="../../index.html" target="_self" rel="_prev"><button>Voltar para página desafios</button></a>
+        <a href="refeito.html" target="_self" rel="_prev"><button>Ir para página refeita</button></a>
+    </div>
+</body>
+</html>

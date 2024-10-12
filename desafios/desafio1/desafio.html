@@ -17,8 +17,9 @@
             text-align: center;  /* Centraliza o texto dentro da div */
             padding: 20px;       /* Adiciona espaçamento interno */
             max-width: 600px;    /* Define uma largura máxima */
-            margin: 0 auto;      /* Centraliza a div dentro do body */
-            padding-top: 40px;   /* Ajuste opcional para espaçamento superior */
+            margin: 0 auto;    /* Centraliza a div dentro do body */
+            padding-top: 200px;   /* Ajuste opcional para espaçamento superior */
+            padding-bottom: 40px;
         }
         h1{
             text-align: center;
@@ -38,9 +39,12 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
-            background-color: #f0f0f0;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            position: fixed;
         }
-        .button-primary{
+        button{
             display: flex;
             color: white;
             background-color: darkblue;
@@ -48,15 +52,6 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-        }
-        .button-secondary{
-            padding: 10px 20px;
-            background-color: darkblue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-
         }
         blockquote{
             text-align: justify;
@@ -86,10 +81,12 @@
         <p>argumentando que percebemos objetos não apenas pelo que são, mas pelo que eles nos permitem fazer. É meio que como quando você olha para um sofá e instantaneamente pensa em sentar. Sua percepção não é apenas visual, mas também impulsionada pelas ações que esse objeto sugere.</p>
         <a href="https://medium.com/@meninadeux/conectando-filosofia-e-design-o-poder-das-affordances-na-percep%C3%A7%C3%A3o-do-usu%C3%A1rio-a0aedf8786c4" target="_blank" rel="_external">Acessar site para conteúdo completo</a>
         <br><br>
+        <p>Desafio de camoflar links</p>
+        <br><br><br>
     </div>
     <div class="container-secondary">
-        <a href="../../index.html" target="_self" rel="_prev"><button class="button-secondary">Voltar para página desafios</button></a>
-        <a href="refeito-desafio.html" target="_self" rel="_prev"><button class="button-primary">Ir para página refeita</button></a>
+        <a href="../../index.html" target="_self" rel="_prev"><button>Voltar para página desafios</button></a>
+        <a href="refeito-desafio.html" target="_self" rel="_prev"><button>Ir para página refeita</button></a>
     </div>
 </body>
 </html>

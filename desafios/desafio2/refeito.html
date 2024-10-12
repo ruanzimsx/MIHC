@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 2 - Refeito</title>
-    <style>
-        .icon-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    <title>Selecionar Arquivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .save-icon {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            border-radius: 10px;
-            position: relative;
-        }
+.file-upload {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        .save-icon::before {
-            content: '\1F4BE'; /* Unicode do ícone de disquete */
-            font-size: 60px;
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        h1{
-            text-align: center;
-        }
-        .container{
+.file-label {
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+}
+
+.file-input {
+    display: none; /* Oculta o input padrão */
+}
+
+.icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+.container-button{
             padding: 20px;
             justify-content: left;
             display: flex;
-            background-color: #f0f0f0;
+            position: fixed; /* Fixa a posição na tela */
+            bottom: 10px; /* Distância do fundo */
+            left: 10px; /* Distância da esquerda */
+            background-color: transparent;
         }
         button{
             background-color: darkblue;
@@ -46,16 +56,17 @@
             border: none;
             border-radius: 5px;
         }
-    </style>
-</head>
+</style>
 <body>
-    <h1>Aplicado Affordance</h1>
-    <div class="icon-container">
-        <div class="save-icon"></div>
+    <div class="file-upload">
+        <label for="file-input" class="file-label">
+            <span class="icon">🗑️</span> <!-- Ícone ambíguo -->
+            Selecione um arquivo
+        </label>
+        <input id="file-input" type="file" class="file-input">
     </div>
-    <div class="container">
+    <div class="container-button">
         <a href="desafio.html" target="_self" rel="_prev"><button>Voltar para página desafio</button></a>
-
     </div>
 </body>
 </html>
